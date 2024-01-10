@@ -5,7 +5,7 @@ public class SparseVecTest2 {
     
     @Test
     public void testEmpty() {
-        SparseVec<Integer> sparseVec = new glesVektor2<>();
+        SparseVec2<Integer> sparseVec = new glesVektor2<>();
 
         // Testa OURsize, maxIndex och minIndex
         assertEquals(0, sparseVec.OURsize());
@@ -23,7 +23,7 @@ public class SparseVecTest2 {
 
     @Test
     public void testIndex(){
-        SparseVec<Integer> sparseVec = new glesVektor2<>();
+        SparseVec2<Integer> sparseVec = new glesVektor2<>();
 
         // Testa lägg in värden och kolla OURsize
         sparseVec.add(0, 5);
@@ -38,7 +38,7 @@ public class SparseVecTest2 {
         assertEquals(4, sparseVec.maxIndex());
 
         // Testa ospesificerade positioner
-        SparseVec<Integer> sparseVec2 = new glesVektor2<>();
+        SparseVec2<Integer> sparseVec2 = new glesVektor2<>();
 
         // Testa lägg in värden och kolla OURsize
         sparseVec2.add(100);
@@ -57,7 +57,7 @@ public class SparseVecTest2 {
 
     @Test
     public void testRemove(){
-        SparseVec<Integer> sparseVec = new glesVektor2<>();
+        SparseVec2<Integer> sparseVec = new glesVektor2<>();
         // lägg till tre värden
         sparseVec.add(0, 10);
         sparseVec.add(5, 50);

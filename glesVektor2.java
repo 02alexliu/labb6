@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class glesVektor2 <E extends Comparable<E>> extends TreeMap<Integer, E> implements SparseVec<E>{
+public class glesVektor2 <E extends Comparable<E>> extends TreeMap<Integer, E> implements SparseVec2<E>{
     //TreeMap<Integer, E> Ourmap = new TreeMap<Integer, E>();
 
     public void add(E elem){
@@ -101,7 +101,7 @@ public class glesVektor2 <E extends Comparable<E>> extends TreeMap<Integer, E> i
     }
 
     public static void main(String[] args) {
-        SparseVec<Integer> sparseVec = new glesVektor2<>();
+        SparseVec2<Integer> sparseVec = new glesVektor2<>();
         sparseVec.add(1, 10);
         sparseVec.add(5, 50);
         sparseVec.add(10, 100);

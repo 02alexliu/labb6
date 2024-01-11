@@ -40,6 +40,9 @@ public class NumberedItem<T> implements Comparable<NumberedItem<T>>{
     }
 
     public boolean equals(NumberedItem<T> comparisonObject){
+        if (comparisonObject == null)
+            return false;
+            
         if (comparisonObject.type instanceof String || type instanceof String){
             if (comparisonObject.type instanceof String && type instanceof String){
                 if (comparisonObject.type.equals(type)){

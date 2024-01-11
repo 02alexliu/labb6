@@ -76,7 +76,7 @@ public class glesVektor2 <E extends Comparable<E>> extends TreeMap<Integer, E> i
         }
     };    // remove first occurence (lowest index) of elem                                        
     public int OURsize(){
-        return this.size();
+        return super.size();
     }
     public int minIndex(){
         try{
@@ -97,7 +97,7 @@ public class glesVektor2 <E extends Comparable<E>> extends TreeMap<Integer, E> i
     }           // highest index in use, if vector is empty return -1                                   
     
     public E OURget(int pos){              // return null if not available  
-        return this.get(pos);
+        return super.get(pos);
     }
 
     public static void main(String[] args) {

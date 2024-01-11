@@ -42,7 +42,7 @@ public class NumberedItem<T> implements Comparable<NumberedItem<T>>{
     public boolean equals(NumberedItem<T> comparisonObject){
         if (comparisonObject == null)
             return false;
-            
+
         if (comparisonObject.type instanceof String || type instanceof String){
             if (comparisonObject.type instanceof String && type instanceof String){
                 if (comparisonObject.type.equals(type)){
@@ -52,8 +52,17 @@ public class NumberedItem<T> implements Comparable<NumberedItem<T>>{
             return false;
         } 
         else{
-            if (comparisonObject.type == type)
-                return true;
+            try{
+                if (comparisonObject.type == type)
+                    return true;
+            } catch(Exception e){
+            }
+            try{
+                if (type.equals(comparisonObject.type))
+                    return true;
+            } catch(Exception e){
+            }
+            
         }
         return false;
         

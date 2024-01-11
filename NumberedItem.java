@@ -40,6 +40,15 @@ public class NumberedItem<T> implements Comparable<NumberedItem<T>>{
     }
 
     public boolean equals(NumberedItem<T> comparisonObject){
+        
+        try {
+            if (comparisonObject.index == index)
+                return true;
+        } catch (Exception e){
+        }
+        return false;
+
+        /* 
         if (comparisonObject == null)
             return false;
 
@@ -65,8 +74,9 @@ public class NumberedItem<T> implements Comparable<NumberedItem<T>>{
             
         }
         return false;
-        
+    */   
     }
-
+    
 }
+
 

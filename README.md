@@ -1,12 +1,14 @@
-## Hej
+# Hej
 git clone https://github.com/02alexliu/labb6
 
-# Compile
-javac -classpath /usr/share/java/junit4.jar:.  SparseVecTest.java
+## Compile
+javac -classpath /usr/share/java/junit4.jar:.  NumberedItemTest0.java
+javac -classpath /usr/share/java/junit4.jar:.  NumberedItemTest.java
 javac -classpath /usr/share/java/junit4.jar:.  SparseVecTest.java
 javac -classpath /usr/share/java/junit4.jar:.  SparseVecTest2.java
 
-# Run
+## Run
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  NumberedItemTest0
+java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  NumberedItemTest
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  SparseVecTest
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  SparseVecTest2

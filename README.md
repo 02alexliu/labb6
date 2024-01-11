@@ -13,6 +13,9 @@ javac -classpath /usr/share/java/junit4.jar:.  SparseVecTest2.java
 
 ## Run
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  NumberedItemTest0
+
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  NumberedItemTest
+
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  SparseVecTest
+
 java -classpath /usr/share/java/junit4.jar:.  org.junit.runner.JUnitCore  SparseVecTest2
